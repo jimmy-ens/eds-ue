@@ -1,0 +1,95 @@
+.cta {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.cta .cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta .cta-title {
+  margin-bottom: 1.5rem;
+}
+
+.cta .cta-title h1,
+.cta .cta-title h2,
+.cta .cta-title h3,
+.cta .cta-title h4,
+.cta .cta-title h5,
+.cta .cta-title h6 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.cta .cta-description {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.cta .cta-description p {
+  margin: 0;
+}
+
+.cta .cta-button {
+  margin-top: 2rem;
+}
+
+.cta .cta-button .button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--link-color);
+  border: 2px solid var(--link-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.cta .cta-button .button:hover {
+  background-color: var(--link-color);
+  color: var(--background-color);
+}
+
+.cta .cta-button .button.primary {
+  background-color: var(--link-color);
+  color: var(--background-color);
+  border-color: var(--link-color);
+}
+
+.cta .cta-button .button.primary:hover {
+  opacity: 0.9;
+}
+
+.cta .cta-button .button.secondary {
+  background-color: transparent;
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.cta .cta-button .button.secondary:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+@media (width <= 768px) {
+  .cta .cta-title h1,
+  .cta .cta-title h2,
+  .cta .cta-title h3,
+  .cta .cta-title h4,
+  .cta .cta-title h5,
+  .cta .cta-title h6 {
+    font-size: 2rem;
+  }
+
+  .cta .cta-description {
+    font-size: 1rem;
+  }
+}
+
