@@ -28,7 +28,7 @@
           "value": ""
         },
         {
-          "component": "richtext",
+          "component": "text",
           "name": "description",
           "value": "",
           "label": "Description",
