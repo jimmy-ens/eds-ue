@@ -180,6 +180,32 @@
     ]
   },
   {
+    "id": "contact",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "name",
+        "label": "Name",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "position",
+        "label": "Position",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "email",
+        "label": "Email",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
