@@ -214,5 +214,52 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "location",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "primaryImage",
+        "label": "Primary Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "secondaryImage",
+        "label": "Secondary Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "city",
+        "label": "City",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "phone",
+        "label": "Phone",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "address",
+        "label": "Address",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "country",
+        "label": "Country",
+        "value": ""
+      }
+    ]
   }
 ]
