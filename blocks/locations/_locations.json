@@ -52,8 +52,8 @@
         {
           "component": "text",
           "valueType": "string",
-          "name": "city",
-          "label": "City",
+          "name": "title",
+          "label": "Title",
           "value": ""
         },
         {

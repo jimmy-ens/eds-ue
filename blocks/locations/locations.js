@@ -12,10 +12,10 @@ export default function decorate(block) {
     const location = {
       primaryImage: cols[0],
       secondaryImage: cols[1],
-      city: cols[2],
+      title: cols[2],
       phone: cols[3],
       address: cols[4],
-      country: cols[5]
+      country: cols[5],
     };
 
     // Create location card structure
@@ -33,7 +33,7 @@ export default function decorate(block) {
         primaryPic.querySelector('img').src,
         primaryPic.querySelector('img').alt,
         false,
-        [{ width: '500' }]
+        [{ width: '500' }],
       );
       optimizedPicPrimary.querySelector('img').classList.add('locations-primary-image');
       imagesContainer.append(optimizedPicPrimary);
@@ -46,7 +46,7 @@ export default function decorate(block) {
         secondaryPic.querySelector('img').src,
         secondaryPic.querySelector('img').alt,
         false,
-        [{ width: '500' }]
+        [{ width: '500' }],
       );
       optimizedPicSecondary.querySelector('img').classList.add('locations-secondary-image');
       imagesContainer.append(optimizedPicSecondary);
@@ -58,12 +58,12 @@ export default function decorate(block) {
     const infoContainer = document.createElement('div');
     infoContainer.className = 'locations-info';
 
-    // City
-    if (location.city) {
-      const cityDiv = document.createElement('div');
-      cityDiv.className = 'locations-city';
-      cityDiv.textContent = location.city.textContent;
-      infoContainer.append(cityDiv);
+    // Title
+    if (location.title) {
+      const titleDiv = document.createElement('div');
+      titleDiv.className = 'locations-title';
+      titleDiv.textContent = location.title.textContent;
+      infoContainer.append(titleDiv);
     }
 
     // Address
@@ -100,4 +100,3 @@ export default function decorate(block) {
 
   block.replaceChildren(ul);
 }
-
