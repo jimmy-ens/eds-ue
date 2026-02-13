@@ -66,6 +66,18 @@
   line-height: 1.5;
 }
 
+.locations-city {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.locations-postcode {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
 .locations-country {
   font-size: 14px;
   color: #999;

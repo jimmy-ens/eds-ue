@@ -73,6 +73,20 @@
         {
           "component": "text",
           "valueType": "string",
+          "name": "city",
+          "label": "City",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "postcode",
+          "label": "Postcode",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
           "name": "country",
           "label": "Country",
           "value": ""

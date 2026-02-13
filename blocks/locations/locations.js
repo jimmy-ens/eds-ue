@@ -15,7 +15,9 @@ export default function decorate(block) {
       title: cols[2],
       phone: cols[3],
       address: cols[4],
-      country: cols[5],
+      city: cols[5],
+      postcode: cols[6],
+      country: cols[7],
     };
 
     // Create location card structure
@@ -66,22 +68,6 @@ export default function decorate(block) {
       infoContainer.append(titleDiv);
     }
 
-    // Address
-    if (location.address) {
-      const addressDiv = document.createElement('div');
-      addressDiv.className = 'locations-address';
-      addressDiv.textContent = location.address.textContent;
-      infoContainer.append(addressDiv);
-    }
-
-    // Country
-    if (location.country) {
-      const countryDiv = document.createElement('div');
-      countryDiv.className = 'locations-country';
-      countryDiv.textContent = location.country.textContent;
-      infoContainer.append(countryDiv);
-    }
-
     // Phone
     if (location.phone) {
       const phoneDiv = document.createElement('div');
@@ -91,6 +77,38 @@ export default function decorate(block) {
       phoneLink.textContent = location.phone.textContent;
       phoneDiv.append(phoneLink);
       infoContainer.append(phoneDiv);
+    }
+
+    // Address
+    if (location.address) {
+      const addressDiv = document.createElement('div');
+      addressDiv.className = 'locations-address';
+      addressDiv.textContent = location.address.textContent;
+      infoContainer.append(addressDiv);
+    }
+
+    // City
+    if (location.city) {
+      const cityDiv = document.createElement('div');
+      cityDiv.className = 'locations-city';
+      cityDiv.textContent = location.city.textContent;
+      infoContainer.append(cityDiv);
+    }
+
+    // Postcode
+    if (location.postcode) {
+      const postcodeDiv = document.createElement('div');
+      postcodeDiv.className = 'locations-postcode';
+      postcodeDiv.textContent = location.postcode.textContent;
+      infoContainer.append(postcodeDiv);
+    }
+
+    // Country
+    if (location.country) {
+      const countryDiv = document.createElement('div');
+      countryDiv.className = 'locations-country';
+      countryDiv.textContent = location.country.textContent;
+      infoContainer.append(countryDiv);
     }
 
     card.append(infoContainer);
