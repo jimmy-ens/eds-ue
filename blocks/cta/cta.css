@@ -1,38 +1,25 @@
-/* CTA block */
-.cta {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.cta-container .cta-wrapper {
-  max-width: unset;
-  padding: 0;
+/* Outer strip */
+.cta.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cta .title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: var(--text-color, #000);
+    padding-top: 80px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .cta .subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: var(--text-color, #666);
-  line-height: 1.6;
+    font-size: 16px;
 }
 
 .cta .email {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--primary-color, #0066cc);
-  word-break: break-all;
+    white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .cta .title {
     font-size: 1.75rem;
   }
