@@ -52,7 +52,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0;
 }
 
 .locations-title {
@@ -88,15 +88,7 @@
 .locations-phone {
   font-size: 14px;
   margin-top: auto;
-}
-
-.locations-phone a {
-  color: var(--link-color, #06c);
-  text-decoration: none;
+  color: #666;
   font-weight: 500;
-}
-
-.locations-phone a:hover {
-  text-decoration: underline;
 }
 
