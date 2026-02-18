@@ -37,7 +37,7 @@ export default function decorate(block) {
         false,
         [{ width: '500' }],
       );
-      optimizedPicPrimary.querySelector('img').classList.add('location-primary-image');
+      optimizedPicPrimary.classList.add('location-primary-image');
       imagesContainer.append(optimizedPicPrimary);
     }
 
@@ -50,8 +50,11 @@ export default function decorate(block) {
         false,
         [{ width: '500' }],
       );
-      optimizedPicSecondary.querySelector('img').classList.add('location-secondary-image');
+      optimizedPicSecondary.classList.add('location-secondary-image');
       imagesContainer.append(optimizedPicSecondary);
+    } else {
+      // Add single-image class when there's no secondary image
+      imagesContainer.classList.add('single-image');
     }
 
     card.append(imagesContainer);
