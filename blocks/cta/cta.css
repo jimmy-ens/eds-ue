@@ -1,14 +1,14 @@
 /* Outer strip */
 .cta.block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta .title {
-    padding-top: 60px;
-    font-size: 32px;
-    font-weight: 800;
+  padding-top: 60px;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .cta .subtitle {
@@ -30,15 +30,15 @@
 
 @media (width <= 768px) {
   .cta .title {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 
   .cta .subtitle {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .cta .email {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
