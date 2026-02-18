@@ -6,17 +6,26 @@
 }
 
 .cta .title {
-    padding-top: 80px;
+    padding-top: 60px;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .cta .subtitle {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-.cta .email {
-    white-space: nowrap;
+.cta .email .button {
+  color: #fff;
+  padding: 16px 48px;
+  background-color: #FF8E2F;
+  border-radius: 4px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.cta .email .button:hover {
+  background-color: #E67E1F;
 }
 
 @media (width <= 768px) {
