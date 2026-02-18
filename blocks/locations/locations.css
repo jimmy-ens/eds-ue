@@ -11,7 +11,7 @@
   list-style: none;
 }
 
-.locations-card {
+.location-card {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -21,21 +21,21 @@
   overflow: hidden;
 }
 
-.locations-images {
+.location-images {
   position: relative;
   height: 240px;
   overflow: hidden;
 }
 
-.locations-primary-image,
-.locations-secondary-image {
+.location-primary-image,
+.location-secondary-image {
   width: 460px;
   height: 240px;
   object-fit: cover;
   display: block;
 }
 
-.locations-secondary-image {
+.location-secondary-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,11 +43,11 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.locations-card:hover .locations-secondary-image {
+.location-card:hover .location-secondary-image {
   opacity: 1;
 }
 
-.locations-info {
+.location-info {
   padding: 24px;
   flex: 1;
   display: flex;
@@ -55,37 +55,37 @@
   gap: 0;
 }
 
-.locations-title {
+.location-title {
   font-size: 18px;
   font-weight: bold;
   color: #333;
 }
 
-.locations-address {
+.location-address {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
 }
 
-.locations-city {
+.location-city {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
 }
 
-.locations-postcode {
+.location-postcode {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
 }
 
-.locations-country {
+.location-country {
   font-size: 14px;
   color: #999;
   font-weight: 500;
 }
 
-.locations-phone {
+.location-phone {
   font-size: 14px;
   margin-top: auto;
   color: #666;

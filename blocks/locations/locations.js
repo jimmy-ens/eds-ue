@@ -22,11 +22,11 @@ export default function decorate(block) {
 
     // Create location card structure
     const card = document.createElement('div');
-    card.className = 'locations-card';
+    card.className = 'location-card';
 
     // Images container
     const imagesContainer = document.createElement('div');
-    imagesContainer.className = 'locations-images';
+    imagesContainer.className = 'location-images';
 
     // Primary image
     if (location.primaryImage && location.primaryImage.querySelector('picture')) {
@@ -37,7 +37,7 @@ export default function decorate(block) {
         false,
         [{ width: '500' }],
       );
-      optimizedPicPrimary.querySelector('img').classList.add('locations-primary-image');
+      optimizedPicPrimary.querySelector('img').classList.add('location-primary-image');
       imagesContainer.append(optimizedPicPrimary);
     }
 
@@ -50,7 +50,7 @@ export default function decorate(block) {
         false,
         [{ width: '500' }],
       );
-      optimizedPicSecondary.querySelector('img').classList.add('locations-secondary-image');
+      optimizedPicSecondary.querySelector('img').classList.add('location-secondary-image');
       imagesContainer.append(optimizedPicSecondary);
     }
 
@@ -58,12 +58,12 @@ export default function decorate(block) {
 
     // Info container
     const infoContainer = document.createElement('div');
-    infoContainer.className = 'locations-info';
+    infoContainer.className = 'location-info';
 
     // Title
     if (location.title) {
       const titleDiv = document.createElement('div');
-      titleDiv.className = 'locations-title';
+      titleDiv.className = 'location-title';
       titleDiv.textContent = location.title.textContent;
       infoContainer.append(titleDiv);
     }
@@ -71,7 +71,7 @@ export default function decorate(block) {
     // Phone
     if (location.phone) {
       const phoneDiv = document.createElement('div');
-      phoneDiv.className = 'locations-phone';
+      phoneDiv.className = 'location-phone';
       const phoneLink = document.createElement('a');
       phoneLink.href = `tel:${location.phone.textContent}`;
       phoneLink.textContent = location.phone.textContent;
@@ -82,7 +82,7 @@ export default function decorate(block) {
     // Address
     if (location.address) {
       const addressDiv = document.createElement('div');
-      addressDiv.className = 'locations-address';
+      addressDiv.className = 'location-address';
       addressDiv.textContent = location.address.textContent;
       infoContainer.append(addressDiv);
     }
@@ -90,7 +90,7 @@ export default function decorate(block) {
     // City
     if (location.city) {
       const cityDiv = document.createElement('div');
-      cityDiv.className = 'locations-city';
+      cityDiv.className = 'location-city';
       cityDiv.textContent = location.city.textContent;
       infoContainer.append(cityDiv);
     }
@@ -98,7 +98,7 @@ export default function decorate(block) {
     // Postcode
     if (location.postcode) {
       const postcodeDiv = document.createElement('div');
-      postcodeDiv.className = 'locations-postcode';
+      postcodeDiv.className = 'location-postcode';
       postcodeDiv.textContent = location.postcode.textContent;
       infoContainer.append(postcodeDiv);
     }
@@ -106,7 +106,7 @@ export default function decorate(block) {
     // Country
     if (location.country) {
       const countryDiv = document.createElement('div');
-      countryDiv.className = 'locations-country';
+      countryDiv.className = 'location-country';
       countryDiv.textContent = location.country.textContent;
       infoContainer.append(countryDiv);
     }
